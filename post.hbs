@@ -10,10 +10,11 @@
             <a class="blog-logo" href="{{@blog.url}}"><h1 class="blog-title">{{@blog.title}}</h1></a>
                             <div class="social">
 		            <span>
-		              <a href="https://www.facebook.com/lingyeungb" target="_blank"><i class="fa fa-facebook-square fa-lg"></i></a>
-		              <a href="http://instagram.com/lingyeungb" target="_blank"><i class="fa fa-instagram fa-lg"></i></a>
-		              <a href="https://twitter.com/lingyeungb" target="_blank"><i class="fa fa-twitter-square fa-lg"></i></a>
-		              <a href="http://www.pinterest.com/lingyeungb/" target="_blank"><i class="fa fa-pinterest-square fa-lg"></i></a>
+              <a href="https://www.facebook.com/lingyeungb" target="_blank"><i class="fa fa-facebook-square fa-lg"></i></a>
+              <a href="http://instagram.com/lingyeungb" target="_blank"><i class="fa fa-instagram fa-lg"></i></a>
+              <a href="https://twitter.com/lingyeungb" target="_blank"><i class="fa fa-twitter-square fa-lg"></i></a>
+              <a href="http://www.pinterest.com/lingyeungb/" target="_blank"><i class="fa fa-pinterest-square fa-lg"></i></a>
+			  <a href="http://www.bloglovin.com/blog/12886717" target="_blank"><i class="fa fa-heart fa-lg"></i></a>
 		            </span>
             </div>
         </div>
@@ -37,13 +38,10 @@
 
             <footer class="post-footer">
 
-                <section class="author">
-                    <h4>{{author.name}}</h4>
-                    <p>{{author.bio}}</p>
-                </section>
+                <p class="author">{{author.name}}</p>
 
-                <section class="share">
-                    <h4>Share this post</h4>
+                <span class="share">
+                    Share this post: 
                     <a class="icon-twitter" href="http://twitter.com/share?text={{encode title}}&url={{url absolute="true"}}"
                         onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                         <span class="hidden">Twitter</span>
@@ -56,7 +54,7 @@
                        onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                         <span class="hidden">Google+</span>
                     </a>
-                </section>
+                </spn>
 
             </footer>
             

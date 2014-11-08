@@ -115,7 +115,7 @@ body {
     max-height: 100%;*/
     font-family: 'batangregular';
     line-height: 1.5;
-    color: #3A4145;
+    color: #2B3034;
 }
 
 ::-moz-selection {
@@ -389,6 +389,7 @@ margin on the iframe, cause it breaks stuff. */
 main {
     display: block;
     margin-left: 250px;
+	margin-top: 60px;
 }
 
 /* Big cover image on the home page */
@@ -435,9 +436,8 @@ main {
     position: relative;
     width:80%;
     max-width: 700px;
-    margin: 4rem auto;
-    padding-bottom: 4rem;
-    padding-top: 20px;
+    margin: 30px auto 10px auto;
+    padding-bottom: 0;
     border-bottom: #EBF2F6 1px solid;
     word-break: break-word;
     hyphens: auto;
@@ -570,26 +570,11 @@ main {
 /* The author credit area after the post */
 .post-footer, .post-comments {
     position: relative;
-    margin: 4rem 0 0 0;
-    padding: 4rem 0 0 0;
     border-top: #EBF2F6 1px solid;
 }
 
-.post-footer h4 {
-    font-size: 11pt;
-    margin: 0;
-    font-weight: normal;
-}
-
-.post-footer p {
-    margin: 1rem 0;
-    font-size: 1.4rem;
-    line-height: 1.6em;
-}
-
-/* Create some space to the right for the share links */
-.post-footer .author {
-    margin-right: 180px;
+.post-footer span {
+  font-size: 10.5pt;
 }
 
 /* Drop the share links in the space to the right.
@@ -597,16 +582,15 @@ main {
    to be flexible at smaller screen sizes while the share
    links remain at a fixed width the whole time */
 .share {
+    display: block;
     position: absolute;
-    top: 4rem;
+    bottom: 0;
     right: 0;
-    width: 180px;
 }
 
 .share a {
-    font-size: 1.2rem;
     display: inline-block;
-    margin: 1.4rem 1.6rem 1.6rem 0;
+	margin: 0 5px 0 5px;
     color: #BBC7CC;
     text-decoration: none;
 }
@@ -816,68 +800,6 @@ main {
     top: -33px;
 }
 
-
-/* ==========================================================================
-   9. Media Queries - Smaller than 900px
-   ========================================================================== */
-
-/*@media only screen and (max-width: 900px) {
-
-    blockquote {
-        margin-left: 0;
-    }
-
-    .site-head {
-        -webkit-box-sizing: border-box; 
-        -moz-box-sizing: border-box;
-        box-sizing: border-box; 
-        height: auto;
-        min-height: 150px;
-        padding: 5% 0;
-    }
-
-    .blog-title {
-        font-size: 30pt;
-        letter-spacing: -1px;
-    }
-
-    .blog-description {
-        font-size: 11pt;
-    }
-
-    .post {
-        font-size: 0.9em;
-        line-height: 1.6em;
-    }
-
-    .post-template .post {
-        padding-bottom: 1rem;
-    }
-
-    .post-template .post-header {
-        padding: 40px 0;
-    }
-
-    h1 {
-        font-size: 11pt;
-        text-indent: -2px;
-    }
-
-    h2 {
-        font-size: 11pt;
-    }
-
-    h3 {
-        font-size: 11pt;
-    }
-
-    h4 {
-        font-size: 11pt;
-    }
-
-}
-/*
-
 /* ==========================================================================
    10. Media Queries - Smaller than 500px
    ========================================================================== */
@@ -901,100 +823,16 @@ main {
     	margin-left: 0;
     	margin-top: 0;
     }
-    
+	
     .post {
-    	margin: auto;
+    	margin: 0 auto 30px auto;
     }
-    
-    /*.blog-logo img {
-        max-height: 80px;
-    }
-
-    .inner, 
-    .pagination {
-        width: auto;
-        margin-left: 16px;
-        margin-right: 16px;
-    }
-
-    .post {
-        width:auto;
-        margin-left: 16px;
-        margin-right: 16px;
-        font-size: 0.8em;
-        line-height: 1.6em;
-    }
-
-    .site-head {
-        padding: 10% 0;
-    }
-
-    .blog-description {
-        font-size: 1.5rem;
-    }
-
-
-    h1, h2 {
-        font-size: 3rem;
-        line-height: 1.1em;
-        letter-spacing: -1px;
-    }
-
-    h3 {
-        font-size: 2.8rem;
-    }
-
-    h4 {
-        font-size: 2.3rem;
-    }
-
-    .post-template .post {
-        padding-bottom: 0;
-    }
-
-    .post-template .post-header {
-        padding: 30px 0;
-    }
-
-    .post-meta {
-        font-size: 1.3rem;
-    }
-
-    .post-footer {
-        padding: 4rem 0;
-        text-align: center;
-    }
-
-    .post-footer .author {
-        margin: 0 0 2rem 0;
-        padding: 0 0 1.6rem 0;
-        border-bottom: #EBF2F6 1px dashed;
-    }
-
-    .post-footer .share {
-        position: static;
-        width: auto;
-    }
-
-    .post-footer .share a {
-        margin: 1.4rem 0.8rem 0 0.8rem;
-    }
-
-    .older-posts,
-    .newer-posts {
-        position: static;
-        margin: 10px 0;
-    }
-
-    .page-number {
-        display: block;
-    }
-
-    .site-footer {
-        margin-top: 6rem;
-        font-size: 1.1rem;
-    }*/
-
+	
+	.share {
+	  margin-bottom: 30px;
+	  position: static;
+	}
+   
 }
 
 /* ==========================================================================
